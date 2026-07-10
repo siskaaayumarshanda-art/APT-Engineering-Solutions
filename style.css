@@ -389,6 +389,8 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    /* Transisi halus agar hover tidak kaku */
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
 }
 
 .iso-box:hover, .pln-box:hover {
@@ -469,70 +471,4 @@ body {
     display: inline-flex;
     align-items: center;
     gap: 10px;
-    background-color: #25d366;
-    color: var(--white);
-    padding: 16px 40px;
-    border-radius: 30px;
-    text-decoration: none;
-    font-weight: 700;
-    font-size: 1.05rem;
-    box-shadow: 0 10px 20px rgba(37, 211, 102, 0.25);
-}
-
-.btn-whatsapp:hover {
-    transform: translateY(-4px);
-    box-shadow: 0 15px 25px rgba(37, 211, 102, 0.4);
-    background-color: #20ba5a;
-}
-
-.footer-divider {
-    height: 1px;
-    background-color: rgba(255,255,255,0.1);
-    margin: 60px 0 40px 0;
-}
-
-.footer-grid {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    text-align: left;
-    gap: 20px;
-}
-
-@media(min-width: 768px) {
-    .footer-grid { flex-direction: row; align-items: center; }
-}
-
-.footer-info h4 {
-    color: var(--secondary-color);
-    margin-bottom: 6px;
-    font-weight: 700;
-}
-
-.footer-info p, .footer-copy p {
-    font-size: 0.9rem;
-    opacity: 0.7;
-}
-
-/* --- SCROLL TO TOP BUTTON --- */
-#scrollTopBtn {
-    display: none;
-    position: fixed;
-    bottom: 30px;
-    right: 30px;
-    background-color: var(--secondary-color);
-    color: white;
-    border: none;
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
-    cursor: pointer;
-    box-shadow: 0 4px 12px rgba(0,0,0,0.25);
-    font-size: 1.1rem;
-    z-index: 999;
-}
-
-#scrollTopBtn:hover {
-    background-color: #b71c1c;
-    transform: translateY(-3px);
-}
+    background-color:
